@@ -9,3 +9,4 @@
   bít tưng ứng của hai số đều bằng nhau. Để so sánh hái số 8 bit ta phải thêm các bit 
   điều khiển vào mạch so sanh hai số một bit, gọi là mạch so sanh 1 bít đầy đủ. Ta có 
   sơ đồ khôi như sau:
+<img src="Sơ đồ khối bộ so sánh 1 bit đầy đủ" width="600" >  
