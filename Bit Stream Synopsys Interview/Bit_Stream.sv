@@ -26,7 +26,7 @@ module Bit_Stream(
   
   assign lock=current_lock;
   
-  always_ff@(posedge clk or negedge rst_n)  begin: ff_proc
+  always_ff@(negedge clk or negedge rst_n)  begin: ff_proc
     if(!rst_n)  begin
       current_state<=pSTS_IDLE;
       state<=pSTS_IDLE;
