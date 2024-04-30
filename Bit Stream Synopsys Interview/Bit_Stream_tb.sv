@@ -9,19 +9,17 @@ module Bit_Stream_tb;
   logic [3:0] state;
   reg [15:0] datain = 16'b1111100010000000;
   reg [15:0] dataout;
-  
   // Instantiate the Bit_Stream module
   Bit_Stream dut(
     .clk(clk),
     .rst_n(rst_n),
     .din(din),
     .en(en),
-    .lock(lock)
+    .lock(lock),
+    .state(state)
   );
 
-  // Initial block for simulation setup
   initial begin
-    // Dump VCD file for waveform viewer
     $dumpfile("dump.vcd");
     $dumpvars(1);
     
@@ -29,7 +27,11 @@ module Bit_Stream_tb;
     clk = 0;
     rst_n = 0;
     en = 0;
-
+  end
+  // Initial block for simulation setup
+  initial begin
+    // Dump VCD file for waveform viewer
+    
     // Delay before enabling
     #5;
     
@@ -41,19 +43,18 @@ module Bit_Stream_tb;
     $monitor("din=%b, lock=%b, clk=%b, datain=%b, dataout=%b, state=%d", din, lock, clk, datain, dataout,state);
     for (int i = 15; i >= 0; i = i - 1) begin
       #10;
-      clk = ~clk; // Toggle clock
       din = datain[i]; // Set input data
       dataout[i] = din; // Store output data
       datain[i] = 1'bx; // Simulate input data being processed
-    end
-    
+//  
     // Finish simulation
-    #10;
+    end
+      #10;
     $finish;
   end
   
   // Clock generation
-  always #10 clk = ~clk;
+  always #5 clk = ~clk;
 
 endmodule
 
