@@ -41,8 +41,6 @@ The last bit of the code input acts as a mode selection for ALU. Remaining 3 are
 
 0111 - Mode 0, Arithmetic Unit for Shift right
 
--------------------------------------------------
-
 1000 - Mode 1, Logical Unit for Compare
 
 1001 - Mode 1, Logical Unit for AND
@@ -56,3 +54,5 @@ The last bit of the code input acts as a mode selection for ALU. Remaining 3 are
 1101 - Mode 1, Logical NOT B
 
 ------
+
+# 8 bit ALU Specification:
