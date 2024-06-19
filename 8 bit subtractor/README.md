@@ -9,13 +9,13 @@ So, a Full Subtractor has three inputs, in which two inputs corresponding to the
 
 The following image shows the block diagram of a full subtractor.
 
-<img src="8 bit subtractor/Image/Full_subtractor.png" width="700" >  
+<img src="Image/Full_subtractor.png" width="700" >  
 
 ## True table of full subtractor:
 
 The following table shows the truth table of a Full Subtractor.
 
-<img src="8 bit subtractor/Image/True_table.png" width="700" >  
+<img src="Image/True_table.png" width="700" >  
 
 ## Schematic of full subtractor:
 
@@ -44,7 +44,7 @@ endmodule
 
 ## 4-bit Subtractor:
 
-<img src="8 bit subtractor/Image/4-bit subtractor.png" width="700" >  
+<img src="Image/4-bit subtractor.png" width="700" >  
 
 ### Source code of 4-bit full subtractor:
 
@@ -72,4 +72,4 @@ endmodule
 
 ## Simulation:
 
-<img src="8 bit subtractor/Image/EPWAVE.png" width="1000" >  
+<img src="Image/EPWAVE.png" width="1000" >  
