@@ -21,7 +21,7 @@ The following table shows the truth table of a Full Subtractor.
 
 By deriving the Boolean expression for the full subtractor from above truth table, we get the expression that tells that a full subtractor can be implemented with half subtractors with OR gate as shown in figure below.
 
-<img src="8 bit subtractor/Image/Full_subtractor_schematic.png" width="700" >  
+<img src="Image/Full_subtractor_schematic.png" width="700" >  
 
 ### Source code of 1-bit full subtractor:
 
