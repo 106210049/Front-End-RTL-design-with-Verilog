@@ -3,15 +3,15 @@ This type of circuit is a bit more difficult to implement than the half-adder ci
 
 The first two inputs are A and B and the third input is Cin which is the remainder of the previous calculation. When designing a full adder we will be able to chain eight of them together to create a wide and cascading adder that carries bits from one adder to the next.
 ## True Table:
-<img src="8 bit full addition/Image/True_table.png" width="1000" >  
+<img src="Image/True_table.png" width="1000" >  
 
 ## Full Adder Schematic:
 
-<img src="8 bit full addition/Image/schematic_full_adder.png" width="700" >  
+<img src="Image/schematic_full_adder.png" width="700" >  
 
 ## 1-bit Full Adder block:
 
-<img src="8 bit full addition/Image/Full_adder_block.png" width="700" >  
+<img src="Image/Full_adder_block.png" width="700" >  
 
 ### Source code 1-bit Full adder:
 ```SystemVerilog
@@ -26,7 +26,7 @@ endmodule
 
 ## 4-bit Full Adder:
 
-<img src="8 bit full addition/Image/Adder 4 bit.png" width="700" >  
+<img src="Image/Adder 4 bit.png" width="700" >  
 
 ### Source code 8-bit Full adder:
 
@@ -50,4 +50,4 @@ module Full_Adder_by8(A,B,Cin,Cout,S);
 endmodule
 ```
 ## Simulation:
-<img src="8 bit full addition/Image/EPWAVE.png" width="1000" >  
+<img src="Image/EPWAVE.png" width="1000" >  
