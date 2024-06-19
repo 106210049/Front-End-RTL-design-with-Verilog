@@ -69,3 +69,9 @@ module Comparator_8bit(a,b,equal,lower,greater);
   Comparator_1bit Compare0(a[0],b[0],equal,lower,greater,c2[0],c1[0],c3[0]);
 endmodule
 ```
+## Simulation:
+### 1. EPWAVE:
+<img src="EPWAVE.png" width="1000" >  
+
+### 2. Log File:
+<img src="LOGFILE.png" width="700" >  
