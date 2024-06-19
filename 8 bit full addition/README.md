@@ -24,9 +24,9 @@ module Full_Adder_by1(A,B,Cin,S,Cout);
 endmodule
 ```
 
-## 4-bit Full Adder:
+## n-bit Full Adder:
 
-<img src="Image/Adder 4 bit.png" width="700" >  
+<img src="Image/Adder_n_bit.png" width="700" >  
 
 ### Source code 8-bit Full adder:
 
