@@ -73,3 +73,5 @@ endmodule
 ## Simulation:
 
 <img src="Image/EPWAVE.png" width="1000" >  
+
+My code in EDA Playground: [8-bit Full Subtractor](https://edaplayground.com/x/ZCkr)
