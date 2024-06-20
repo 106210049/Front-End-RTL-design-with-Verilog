@@ -75,3 +75,5 @@ endmodule
 
 ### 2. Log File:
 <img src="LOGFILE.png" width="700" >  
+
+My code in EDA Playground: [8-bit Comparator](https://edaplayground.com/x/FzY2)
