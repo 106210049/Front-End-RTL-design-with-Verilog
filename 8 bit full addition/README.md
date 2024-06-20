@@ -51,3 +51,5 @@ endmodule
 ```
 ## Simulation:
 <img src="Image/EPWAVE.png" width="1000" >  
+
+My code in EDA Playground: [8-bit Full Adder](https://edaplayground.com/x/TA3i)
