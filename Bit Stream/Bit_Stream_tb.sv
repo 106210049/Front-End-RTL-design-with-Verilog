@@ -35,7 +35,7 @@ module FSM_tb;
 
     // Apply input sequence "1001001" to din
     $display("Applying input sequence 1001001...");
-    apply_din_sequence(11'b10010011001);
+    apply_din_sequence(15'b100100110001001);
 
     // End simulation
     #10;
@@ -43,10 +43,10 @@ module FSM_tb;
   end
 
   // Task to apply each bit in a sequence to din
-  task apply_din_sequence(input [10:0] seq);
+  task apply_din_sequence(input [14:0] seq);
     integer i;
     begin
-      for (i = 10; i >= 0; i = i - 1) begin
+      for (i = 14; i >= 0; i = i - 1) begin
         din = seq[i];
         @(posedge clk);
         #1; // Wait a little to see the output update
