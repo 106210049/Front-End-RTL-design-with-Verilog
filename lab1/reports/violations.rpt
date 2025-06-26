@@ -1,0 +1,27 @@
+****************************************
+Report : constraint
+	-all_violators
+	-path slack_only
+Design : counter
+Version: W-2024.09-SP5
+Date   : Thu Jun 26 09:58:57 2025
+****************************************
+
+
+
+   min_delay/hold ('clk' group)
+
+   Endpoint                                                  Slack
+   -----------------------------------------------------------------
+   q_reg[4]/D                                                -0.15  (VIOLATED)
+   q_reg[1]/D                                                -0.15  (VIOLATED)
+   q_reg[3]/D                                                -0.15  (VIOLATED)
+   q_reg[7]/D                                                -0.15  (VIOLATED)
+   q_reg[0]/D                                                -0.15  (VIOLATED)
+   q_reg[2]/D                                                -0.14  (VIOLATED)
+   q_reg[5]/D                                                -0.14  (VIOLATED)
+   q_reg[6]/D                                                -0.14  (VIOLATED)
+
+
+Warning: Transition times on not annotated delay arcs havebeen set to zero. Cannot perform max_transition checking. (PTE-057)
+1

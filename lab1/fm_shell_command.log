@@ -1,0 +1,90 @@
+#@ # 
+#@ # Running fm_shell Version W-2024.09-SP5 for linux64 -- Apr  9, 2025
+#@ # Date:   Sat Jun 21 16:53:03 2025
+#@ # Run by: dsac@dsac156
+#@ 
+
+source /home/dsac/synopsys/tools/fm/W-2024.09-SP5/admin/setup/.synopsys_fm.setup
+#@ # -- Starting source /home/dsac/synopsys/tools/fm/W-2024.09-SP5/admin/setup/.synopsys_fm.setup
+
+#@ #
+#@ # .synopsys_fm.setup: Initialization File for Formality
+#@ #
+#@ 
+#@ 
+#@ #
+#@ # Enable stack trace output on fatal.  Not available for all architectures.
+#@ #
+#@ if { $sh_arch == "sparc" || $sh_arch == "sparcOS5" || \
+#@      $sh_arch == "hp700" || $sh_arch == "hpux10" } {
+#@   set_unix_variable SYNOPSYS_TRACE ""
+#@ }
+#@ 
+#@ #
+#@ # Variable settings
+#@ #
+#@ set sh_new_variable_message true
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you uncomment the following command
+#@ # in order to set sh_command_abbrev_mode to the value "Command-Line-Only".
+#@ # Command abbreviation is intended as an interactive convenience.  Using
+#@ # abbreviations in scripts can cause commands to fail in subsequent releases.
+#@ # 
+#@ #set sh_command_abbrev_mode "Command-Line-Only"
+#@ 
+#@ #
+#@ # Some useful aliases
+#@ #
+#@ alias list_commands		help
+#@ 
+#@ #
+#@ # The alias of q to quit is commented out.  Remove the comment 
+#@ # character if you want this alias.  Some users find that having 
+#@ # this particular alias causes problems when mixed with page-mode
+#@ # for reports - an accidental repeated 'q' not only cancels the
+#@ # output but exits the tool.
+#@ #
+#@ #alias q quit
+#@ # -- End source /home/dsac/synopsys/tools/fm/W-2024.09-SP5/admin/setup/.synopsys_fm.setup
+
+source -echo -verbose LEC/lab1.tcl
+#@ # -- Starting source LEC/lab1.tcl
+
+#@ # =============================================
+#@ # Formality Equivalence Check TCL Script: COUNTER
+#@ # =============================================
+#@ 
+#@ file mkdir ./reports
+#@ # 0. Load SVF from Design Compiler
+#@ set_svf ./outputs/counter_formality.svf
+#@ 
+#@ # 1. Load the RTL design (container "r")
+#@ read_verilog -container r -libname WORK -01 { ./rtl/counter.v }
+#@ set_top r:/WORK/counter
+#@ 
+#@ # 2. Load the synthesized netlist (container "i")
+#@ read_verilog -container i -libname WORK -01 { ./outputs/counter_synth.v }
+#@ 
+#@ # 3. Load the standard cell library
+#@ read_db { /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db }
+#@ 
+#@ # 4. Set the top module for netlist
+#@ set_top i:/WORK/counter
+#@ 
+#@ # 5. Match RTL vs Netlist
+#@ match
+#@ 
+#@ # 6. Formal verification
+#@ verify
+#@ 
+#@ # 7. Reports
+#@ #report_verification_results > ./reports/verify_report.txt
+#@ report_compare_points > ./reports/compare_points.txt
+#@ report_black_boxes > ./reports/black_boxes.txt
+#@ report_unmatched_points > ./reports/unmatched_points.txt
+#@ 
+#@ 
+#@ 
+#@ # -- End source LEC/lab1.tcl
+

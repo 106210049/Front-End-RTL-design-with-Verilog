@@ -1,0 +1,26 @@
+Warning:  The report_compare_points command is obsolete.
+	Using report_user_matches/report_dont_verify_points instead.
+**************************************************
+Report         : user_matches
+
+Reference      : r:/WORK/counter
+Implementation : i:/WORK/counter
+Version        : W-2024.09-SP5
+Date           : Thu Jun 26 09:53:47 2025
+**************************************************
+
+User matched points:
+   None
+
+**************************************************
+Report         : dont_verify_points
+
+Reference      : r:/WORK/counter
+Implementation : i:/WORK/counter
+Version        : W-2024.09-SP5
+Date           : Thu Jun 26 09:53:47 2025
+**************************************************
+
+Don't verify points:   None
+
+1

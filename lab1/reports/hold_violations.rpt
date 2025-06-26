@@ -1,0 +1,249 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-slack_lesser_than 0.00
+	-max_paths 100
+	-group **async_default** **clock_gating_default** **default** clk
+	-sort_by group
+Design : counter
+Version: W-2024.09-SP5
+Date   : Thu Jun 26 09:58:57 2025
+****************************************
+
+
+  Startpoint: q_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[4]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                 0.00       0.00 r
+  q_reg[4]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.02 *     0.02 f
+  U28/X (SAEDRVT14_AO32_U_0P5)                            0.02 *     0.04 f
+  q_reg[4]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.01 *     0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[4]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                            0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  library hold time                                       0.00 *     0.21
+  data required time                                                 0.21
+  ------------------------------------------------------------------------------
+  data required time                                                 0.21
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: q_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[1]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                 0.00       0.00 r
+  q_reg[1]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.02 *     0.02 f
+  U29/X (SAEDRVT14_AO32_U_0P5)                            0.02 *     0.05 f
+  q_reg[1]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.01 *     0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[1]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                            0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  library hold time                                       0.00 *     0.21
+  data required time                                                 0.21
+  ------------------------------------------------------------------------------
+  data required time                                                 0.21
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: q_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[7]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                 0.00       0.00 r
+  q_reg[7]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.02 *     0.02 r
+  U32/X (SAEDRVT14_EO2_V1_0P75)                           0.02 *     0.04 f
+  q_reg[7]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.01 *     0.05 f
+  data arrival time                                                  0.05
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[7]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                            0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  library hold time                                       0.00 *     0.20
+  data required time                                                 0.20
+  ------------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.05
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: q_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[3]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                 0.00       0.00 r
+  q_reg[3]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.02 *     0.02 f
+  U13/X (SAEDRVT14_MUX2_MM_0P5)                           0.02 *     0.05 f
+  q_reg[3]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.01 *     0.06 f
+  data arrival time                                                  0.06
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[3]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                            0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  library hold time                                       0.00 *     0.21
+  data required time                                                 0.21
+  ------------------------------------------------------------------------------
+  data required time                                                 0.21
+  data arrival time                                                 -0.06
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: q_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[0]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                 0.00       0.00 r
+  q_reg[0]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.02 *     0.02 f
+  U14/X (SAEDRVT14_MUX2_MM_0P5)                           0.02 *     0.05 f
+  q_reg[0]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.01 *     0.06 f
+  data arrival time                                                  0.06
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[0]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                            0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  library hold time                                       0.00 *     0.21
+  data required time                                                 0.21
+  ------------------------------------------------------------------------------
+  data required time                                                 0.21
+  data arrival time                                                 -0.06
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.15
+
+
+  Startpoint: q_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[2]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                 0.00       0.00 r
+  q_reg[2]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.02 *     0.02 f
+  U12/X (SAEDRVT14_INV_0P5)                               0.02 *     0.04 r
+  U23/X (SAEDRVT14_AOI21_0P75)                            0.01 *     0.05 f
+  q_reg[2]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.01 *     0.06 f
+  data arrival time                                                  0.06
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[2]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                            0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  library hold time                                       0.00 *     0.20
+  data required time                                                 0.20
+  ------------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.06
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.14
+
+
+  Startpoint: q_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[5]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                 0.00       0.00 r
+  q_reg[5]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.03 *     0.03 f
+  U20/X (SAEDRVT14_OA21_1)                                0.03 *     0.05 f
+  q_reg[5]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.01 *     0.06 f
+  data arrival time                                                  0.06
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[5]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                            0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  library hold time                                       0.00 *     0.21
+  data required time                                                 0.21
+  ------------------------------------------------------------------------------
+  data required time                                                 0.21
+  data arrival time                                                 -0.06
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.14
+
+
+  Startpoint: q_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[6]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                 0.00       0.00 r
+  q_reg[6]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.02 *     0.02 f
+  U25/X (SAEDRVT14_INV_0P5)                               0.02 *     0.04 r
+  U21/X (SAEDRVT14_AOI21_0P75)                            0.02 *     0.05 f
+  q_reg[6]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.01 *     0.06 f
+  data arrival time                                                  0.06
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[6]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                            0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                       0.20       0.20
+  library hold time                                       0.00 *     0.20
+  data required time                                                 0.20
+  ------------------------------------------------------------------------------
+  data required time                                                 0.20
+  data arrival time                                                 -0.06
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.14
+
+
+1

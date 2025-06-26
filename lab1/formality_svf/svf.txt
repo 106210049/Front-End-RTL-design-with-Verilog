@@ -1,0 +1,91 @@
+
+
+##################################################################################
+# Copyright 2002-2025 Synopsys, Inc.  All rights reserved.
+# This Synopsys product and all associated documentation and files are
+# proprietary to Synopsys, Inc. and may only be used pursuant to the terms
+# and conditions of a written license agreement with Synopsys, Inc. All other
+# use, reproduction, modification, or distribution of the Synopsys product or
+# the associated documentation or files is strictly prohibited.
+##################################################################################
+
+
+## SVF file read: /home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_formality.svf
+
+guide \
+  -tool { Design Compiler } \
+  -version { W-2024.09-SP3 built Jan 07, 2025 } \
+  -SVF { 21.230 } \
+  -timestamp { Sat Jun 21 16:48:34 2025 } 
+
+## Operation Id: 1
+guide_environment \
+  { { precompile_db_list /home/dsac/synopsys/tools/syn/W-2024.09-SP3/libraries/syn/gtech.db } } 
+
+## Operation Id: 2
+guide_environment \
+  { { dc_product_version W-2024.09-SP3 } \
+    { dc_product_build_date { Jan 07, 2025 } } \
+    { bus_dimension_separator_style ][ } \
+    { bus_extraction_style %s\[%d:%d\] } \
+    { bus_multiple_separator_style , } \
+    { bus_naming_style %s[%d] } \
+    { bus_range_separator_style : } \
+    { dc_allow_rtl_pg false } \
+    { hdlin_allow_4state_parameters TRUE } \
+    { hdlin_unified_rtl_read FALSE } \
+    { hdlin_enable_hier_naming FALSE } \
+    { hdlin_enable_upf_compatible_naming FALSE } \
+    { hdlin_vhdl_preserve_case FALSE } \
+    { hdlin_generate_naming_style %s_%d } \
+    { hdlin_generate_separator_style _ } \
+    { hdlin_infer_enumerated_types FALSE } \
+    { hdlin_interface_port_downto FALSE } \
+    { hdlin_optimize_enum_types FALSE } \
+    { hdlin_preserve_sequential none } \
+    { hdlin_sverilog_std 2017 } \
+    { hdlin_sv_packages dont_chain } \
+    { hdlin_sv_union_member_naming FALSE } \
+    { hdlin_vhdl_std 2008 } \
+    { hdlin_vrlg_std 2005 } \
+    { hdlin_v2005_replication_semantics TRUE } \
+    { hdlin_while_loop_iterations 4096 } \
+    { hdlin_enable_verilog_configurations_canonical TRUE } \
+    { hdlin_enable_verilog_configurations_array_n_block TRUE } \
+    { hdlin_enable_persistent_macros FALSE } \
+    { hdlin_persistent_macros_filename syn_auto_generated_macro_file.sv } \
+    { link_portname_allow_period_to_match_underscore false } \
+    { link_portname_allow_square_bracket_to_match_underscore false } \
+    { port_complement_naming_style %s_BAR } \
+    { simplified_verification_mode FALSE } \
+    { template_naming_style %s_%p } \
+    { template_parameter_style %s%d } \
+    { template_separator_style _ } \
+    { upf_iso_filter_elements_with_applies_to ENABLE } \
+    { upf_isols_allow_instances_in_elements true } \
+    { link_library { /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ss0p72vm40c.db /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_tt0p8v25c.db dw_foundation.sldb } } \
+    { target_library { /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ss0p72vm40c.db /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_tt0p8v25c.db } } \
+    { search_path { . /home/dsac/Documents/Long/Pico/common/liberty } } \
+    { hdlin_fmsvf_enable_div_by_pow2 true } \
+    { synopsys_root /home/dsac/synopsys/tools/syn/W-2024.09-SP3 } \
+    { cwd /home/dsac/Documents/Long/Pico/me_labs/lab1 } \
+    { current_design counter } \
+    { compile_seqmap_propagate_high_effort true } } 
+
+## Operation Id: 3
+guide_change_names \
+  -design { counter } \
+  { { cell add_14 add_x_1 } } 
+
+## Operation Id: 4
+guide_environment \
+  { { postcompile_db_list /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db } } 
+
+## Operation Id: 5
+guide_environment \
+  { { link_library { /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ss0p72vm40c.db /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_tt0p8v25c.db } } \
+    { write_file { -format verilog -hierarchy -output /home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_synth.v } } \
+    { compile_seqmap_propagate_high_effort true } } 
+
+setup
+

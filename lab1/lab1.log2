@@ -1,0 +1,166 @@
+
+                                 Formality (R)
+
+               Version W-2024.09-SP5 for linux64 - Apr 09, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Build: 9717777
+Hostname: dsac156
+Current time: Sat Jun 21 16:53:03 2025
+
+Loading db file '/home/dsac/synopsys/tools/fm/W-2024.09-SP5/libraries/syn/gtech.db'
+
+Script: LEC/lab1.tcl
+
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+# =============================================
+# Formality Equivalence Check TCL Script: COUNTER
+# =============================================
+file mkdir ./reports
+# 0. Load SVF from Design Compiler
+set_svf ./outputs/counter_formality.svf
+SVF set to '/home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_formality.svf'.
+1
+# 1. Load the RTL design (container "r")
+read_verilog -container r -libname WORK -01 { ./rtl/counter.v }
+Loading verilog file '/home/dsac/Documents/Long/Pico/me_labs/lab1/rtl/counter.v'
+Current container set to 'r'
+1
+set_top r:/WORK/counter
+Setting top design to 'r:/WORK/counter'
+Status:   Elaborating design counter   ...  
+Status:  Implementing inferred operators...
+Top design successfully set to 'r:/WORK/counter'
+Reference design set to 'r:/WORK/counter'
+1
+# 2. Load the synthesized netlist (container "i")
+read_verilog -container i -libname WORK -01 { ./outputs/counter_synth.v }
+Loading verilog file '/home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_synth.v'
+Current container set to 'i'
+1
+# 3. Load the standard cell library
+read_db { /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db }
+Loading db file '/home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db'
+1
+# 4. Set the top module for netlist
+set_top i:/WORK/counter
+Setting top design to 'i:/WORK/counter'
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  62 unlinked power cell(s) with unread pg pins.
+Warning:  603 unlinked power cell(s) with no power down functions on outputs.
+Warning:  2 unlinked power cell(s) with unread backup pg pins.
+Warning:  238 unlinked power cell(s) with no power down function on an ff or latch.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'i:/WORK/counter'
+Implementation design set to 'i:/WORK/counter'
+1
+# 5. Match RTL vs Netlist
+match
+Reference design is 'r:/WORK/counter'
+Implementation design is 'i:/WORK/counter'
+Status:  Checking designs...
+Status:  Building verification models...
+Status:  Processing Guide Commands...
+    SVF BEGIN: Timestamp: Cpu: 0.000h, Wall: 0.000h, Mem: 0.886G, Current time: Sat Jun 21 16:53:04 2025
+    SVF END: Timestamp: Cpu: 0.000h, Wall: 0.000h, Mem: 0.886G, Current time: Sat Jun 21 16:53:04 2025
+
+***************************** Guidance Summary *****************************
+                                         Status
+Command                 Accepted   Rejected    Pending Unprocessed     Total
+----------------------------------------------------------------------------
+change_names        :          1          0          0          0          1
+environment         :          4          0          0          0          4
+----------------------------------------------------------------------------
+Total               :          5          0          0          0          5
+
+
+Note: No guide_hier_map commands were found in the SVF. It is
+      important to enable guide_hier_map generation in
+      Design Compiler to avoid SVF rejections that can cause
+      aborted/failing points or long run times during verification.
+      In Design Compiler the recommended methodology uses variable
+      hdlin_enable_hier_map and command set_verification_top.
+
+SVF files read:
+      /home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_formality.svf
+
+SVF files produced:
+  /home/dsac/Documents/Long/Pico/me_labs/lab1/formality_svf/
+    svf.txt
+****************************************************************************
+
+Status:  Matching...
+    
+*********************************** Matching Results ***********************************    
+ 16 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 3 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+****************************************************************************************
+
+1
+# 6. Formal verification
+verify
+Reference design is 'r:/WORK/counter'
+Implementation design is 'i:/WORK/counter'
+    
+*********************************** Matching Results ***********************************    
+ 16 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 3 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+****************************************************************************************
+
+Status:  Verifying...
+
+
+********************************* Verification Results *********************************
+Verification SUCCEEDED
+----------------------
+ Reference design: r:/WORK/counter
+ Implementation design: i:/WORK/counter
+ 16 Passing compare points
+----------------------------------------------------------------------------------------
+Matched Compare Points     BBPin    Loop   BBNet     Cut    Port     DFF     LAT   TOTAL
+----------------------------------------------------------------------------------------
+Passing (equivalent)           0       0       0       0       8       8       0      16
+Failing (not equivalent)       0       0       0       0       0       0       0       0
+****************************************************************************************
+1
+# 7. Reports
+#report_verification_results > ./reports/verify_report.txt
+report_compare_points > ./reports/compare_points.txt
+report_black_boxes > ./reports/black_boxes.txt
+report_unmatched_points > ./reports/unmatched_points.txt
+fm_shell (verify)> 
+fm_shell (verify)> 
+fm_shell (verify)> 
+fm_shell (verify)> 
+fm_shell (verify)> Interrupt detected: Stopping current operation
+
+fm_shell (verify)> Interrupt detected: Stopping current operation
+
+fm_shell (verify)> Application not responding: process terminated

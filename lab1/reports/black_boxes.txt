@@ -1,0 +1,526 @@
+**************************************************
+Report         : black_boxes
+
+Reference      : r:/WORK/counter
+Implementation : i:/WORK/counter
+Version        : W-2024.09-SP5
+Date           : Thu Jun 26 09:53:47 2025
+**************************************************
+Information: Reporting black boxes for current reference and implementation designs. (FM-184)
+
+ ___________________________________________________
+|                                                   |
+|  Legend:                                          |
+|           Black Box Attributes                    |
+|              s = Set with set_black_box command   |
+|              i = Module read with -interface_only |
+|              u = Unresolved design module         |
+|              e = Empty design module              |
+|              * = Unlinked design module           |
+|             ut = Unread tech cells pins           |
+|              L = Linked to non-black box design   |
+|             cp = Cutpoint blackbox                |
+|             ir = Internal rounded blackbox        |
+|              f = Formality Power Model            |
+|              m = Technology Macro cell (.db)      |
+|___________________________________________________|
+
+
+##################################################################
+####    TECH LIBRARY - i:/SAED14RVT_FF0P88V125C
+##################################################################
+Type  Design Name
+----  ----------
+m *    SAEDRVT14_CAPB2
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPB2#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPB3
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPB3#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPBIN13
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPBIN13#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPBTAP6
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPBTAP6#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPSPACER1
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPSPACER1#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPT2
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPT2#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPT3
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPT3#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPTIN13
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPTIN13#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPTTAP6
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPTTAP6#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPTTAPP6
+
+       Instances : 0
+
+m *    SAEDRVT14_CAPTTAPP6#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_ECO_12
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_ECO_12#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_ECO_15
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_ECO_15#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_ECO_18
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_ECO_18#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_ECO_6
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_ECO_6#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_ECO_9
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_ECO_9#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV1ECO_12
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV1ECO_12#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV1ECO_15
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV1ECO_15#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV1ECO_18
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV1ECO_18#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV1ECO_6
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV1ECO_6#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV1ECO_9
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV1ECO_9#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV3_3
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_PV3_3#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_V4_16
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_V4_16#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_V4_32
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_V4_32#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_V4_5
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_V4_5#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_V4_64
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_V4_64#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_V4_8
+
+       Instances : 0
+
+m *    SAEDRVT14_DCAP_V4_8#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_FDNRBSBQ_V2_0P5
+
+       Instances : 0
+
+m      SAEDRVT14_FDNRBSBQ_V2_0P5#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FDNRBSBQ_V2_0P5#PWR/pwrBB
+
+m *    SAEDRVT14_FDNRBSBQ_V2_1
+
+       Instances : 0
+
+m      SAEDRVT14_FDNRBSBQ_V2_1#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FDNRBSBQ_V2_1#PWR/pwrBB
+
+m *    SAEDRVT14_FDNRBSBQ_V2_2
+
+       Instances : 0
+
+m      SAEDRVT14_FDNRBSBQ_V2_2#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FDNRBSBQ_V2_2#PWR/pwrBB
+
+m *    SAEDRVT14_FDNRBSBQ_V2_4
+
+       Instances : 0
+
+m      SAEDRVT14_FDNRBSBQ_V2_4#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FDNRBSBQ_V2_4#PWR/pwrBB
+
+m *    SAEDRVT14_FDPRBSBQ_V2_0P5
+
+       Instances : 0
+
+m      SAEDRVT14_FDPRBSBQ_V2_0P5#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FDPRBSBQ_V2_0P5#PWR/pwrBB
+
+m *    SAEDRVT14_FDPRBSBQ_V2_1
+
+       Instances : 0
+
+m      SAEDRVT14_FDPRBSBQ_V2_1#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FDPRBSBQ_V2_1#PWR/pwrBB
+
+m *    SAEDRVT14_FDPRBSBQ_V2_2
+
+       Instances : 0
+
+m      SAEDRVT14_FDPRBSBQ_V2_2#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FDPRBSBQ_V2_2#PWR/pwrBB
+
+m *    SAEDRVT14_FDPRBSBQ_V2_4
+
+       Instances : 0
+
+m      SAEDRVT14_FDPRBSBQ_V2_4#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FDPRBSBQ_V2_4#PWR/pwrBB
+
+m *    SAEDRVT14_FSDPRBSBQ_V2LP_0P5
+
+       Instances : 0
+
+m      SAEDRVT14_FSDPRBSBQ_V2LP_0P5#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FSDPRBSBQ_V2LP_0P5#PWR/pwrBB
+
+m *    SAEDRVT14_FSDPRBSBQ_V2LP_1
+
+       Instances : 0
+
+m      SAEDRVT14_FSDPRBSBQ_V2LP_1#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FSDPRBSBQ_V2LP_1#PWR/pwrBB
+
+m *    SAEDRVT14_FSDPRBSBQ_V2LP_2
+
+       Instances : 0
+
+m      SAEDRVT14_FSDPRBSBQ_V2LP_2#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FSDPRBSBQ_V2LP_2#PWR/pwrBB
+
+m *    SAEDRVT14_FSDPRBSBQ_V2_0P5
+
+       Instances : 0
+
+m      SAEDRVT14_FSDPRBSBQ_V2_0P5#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FSDPRBSBQ_V2_0P5#PWR/pwrBB
+
+m *    SAEDRVT14_FSDPRBSBQ_V2_1
+
+       Instances : 0
+
+m      SAEDRVT14_FSDPRBSBQ_V2_1#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FSDPRBSBQ_V2_1#PWR/pwrBB
+
+m *    SAEDRVT14_FSDPRBSBQ_V2_2
+
+       Instances : 0
+
+m      SAEDRVT14_FSDPRBSBQ_V2_2#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FSDPRBSBQ_V2_2#PWR/pwrBB
+
+m *    SAEDRVT14_FSDPRBSBQ_V2_4
+
+       Instances : 0
+
+m      SAEDRVT14_FSDPRBSBQ_V2_4#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_FSDPRBSBQ_V2_4#PWR/pwrBB
+
+m *    SAEDRVT14_INV_OR2_AN2_1
+
+       Instances : 0
+
+m      SAEDRVT14_INV_OR2_AN2_1#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_INV_OR2_AN2_1#PWR/pwrBB
+
+m *    SAEDRVT14_SRRDPQ4_1
+
+       Instances : 0
+
+m      SAEDRVT14_SRRDPQ4_1#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_SRRDPQ4_1#PWR/pwrBB
+
+m *    SAEDRVT14_SRRDPQ4_2
+
+       Instances : 0
+
+m      SAEDRVT14_SRRDPQ4_2#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_SRRDPQ4_2#PWR/pwrBB
+
+m *    SAEDRVT14_SSRRDPQ4_1
+
+       Instances : 0
+
+m      SAEDRVT14_SSRRDPQ4_1#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_SSRRDPQ4_1#PWR/pwrBB
+
+m *    SAEDRVT14_SSRRDPQ4_2
+
+       Instances : 0
+
+m      SAEDRVT14_SSRRDPQ4_2#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_SSRRDPQ4_2#PWR/pwrBB
+
+m *    SAEDRVT14_TAPDS
+
+       Instances : 0
+
+m *    SAEDRVT14_TAPDS#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_TAPPN
+
+       Instances : 0
+
+m *    SAEDRVT14_TAPPN#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_TAPPP10
+
+       Instances : 0
+
+m *    SAEDRVT14_TAPPP10#PWR
+
+       Instances : 0
+
+m *    SAEDRVT14_TIEDIN_4
+
+       Instances : 0
+
+m      SAEDRVT14_TIEDIN_4#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_TIEDIN_4#PWR/pwrBB
+
+m *    SAEDRVT14_TIEDIN_PV1ECO_6
+
+       Instances : 0
+
+m      SAEDRVT14_TIEDIN_PV1ECO_6#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_TIEDIN_PV1ECO_6#PWR/pwrBB
+
+m *    SAEDRVT14_TIEDIN_V1ECO_6
+
+       Instances : 0
+
+m      SAEDRVT14_TIEDIN_V1ECO_6#PWR_FM_BBOX
+
+       Instances : 1 of 1
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_TIEDIN_V1ECO_6#PWR/pwrBB
+
+ut     SNPS_UNREAD_TECH_INPUT_PIN_BBOX
+
+       Instances : 24 of 24
+       ------------------------
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_AN2B_MM_12#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_AN2B_MM_12#PWR/VSS*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_AN3_0P75#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_AN3_0P75#PWR/VSS*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_AN4_0P5#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_AN4_0P5#PWR/VSS*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_AO32_U_0P5#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_AO32_U_0P5#PWR/VSS*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_AOI21_0P75#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_AOI21_0P75#PWR/VSS*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_EO2_V1_0P75#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_EO2_V1_0P75#PWR/VSS*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_INV_0P5#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_INV_0P5#PWR/VSS*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_MUX2_MM_0P5#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_MUX2_MM_0P5#PWR/VSS*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_ND3B_0P75#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_ND3B_0P75#PWR/VSS*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_OA21_1#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_OA21_1#PWR/VSS*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_OR2_MM_0P5#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_OR2_MM_0P5#PWR/VSS*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_CLKSPLT_1#PWR/VDD*unread*
+       i:/SAED14RVT_FF0P88V125C/SAEDRVT14_CLKSPLT_1#PWR/VSS*unread*
+
+
+1

@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : counter
+Version: W-2024.09-SP3
+Date   : Tue Jun 24 22:29:35 2025
+****************************************
+
+Operating Conditions: ff0p88v125c   Library: saed14rvt_ff0p88v125c
+Wire Load Model Mode: top
+
+  Startpoint: q_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  counter            ForQA                 saed14rvt_ff0p88v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  q_reg[0]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                 0.00       0.00 r
+  q_reg[0]/Q (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.03       0.03 r
+  U26/X (SAEDRVT14_INV_0P5)                               0.02       0.05 f
+  U18/X (SAEDRVT14_ND3B_0P75)                             0.03       0.08 f
+  U31/X (SAEDRVT14_OR2_MM_0P5)                            0.02       0.10 f
+  U17/X (SAEDRVT14_ND3B_0P75)                             0.03       0.13 f
+  U22/X (SAEDRVT14_AN2B_MM_12)                            0.03       0.15 r
+  U27/X (SAEDRVT14_INV_0P5)                               0.01       0.17 f
+  U21/X (SAEDRVT14_AOI21_0P75)                            0.02       0.18 r
+  q_reg[6]/D (SAEDRVT14_FDPRBQ_V2LP_0P5)                  0.01       0.19 r
+  data arrival time                                                  0.19
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  q_reg[6]/CK (SAEDRVT14_FDPRBQ_V2LP_0P5)                 0.00       9.80 r
+  library setup time                                     -0.02       9.78
+  data required time                                                 9.78
+  --------------------------------------------------------------------------
+  data required time                                                 9.78
+  data arrival time                                                 -0.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.59
+
+
+1

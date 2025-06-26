@@ -1,0 +1,417 @@
+Initializing gui preferences from file  /home/dsac/.synopsys_dc_gui/preferences.tcl
+Current time:       Sat Jun 21 17:20:15 2025
+Hostname:           dsac156
+CPU Model:          Intel(R) Core(TM) i5-14500
+CPU Details:        Cores = 20 : Sockets = 1 : Cache Size = 24576 KB : Freq = 4.74 GHz
+OS:                 Linux 5.14.0-570.21.1.el9_6.x86_64
+RAM:                 15 GB (Free   8 GB)
+Swap:                 7 GB (Free   7 GB)
+Work Filesystem:    /home mounted to /dev/mapper/almalinux-home
+Tmp Filesystem:     / mounted to /dev/mapper/almalinux-root
+Work Disk:          397 GB (Free 326 GB)
+Tmp Disk:            69 GB (Free  57 GB)
+
+CPU Load: 1%, Ram Free: 8 GB, Swap Free: 7 GB, Work Disk Free: 326 GB, Tmp Disk Free: 57 GB
+# =============================================
+# Design Compiler Synthesis Script for Counter
+# =============================================
+# Set technology libraries
+set search_path [list . /home/dsac/Documents/Long/Pico/common/liberty]
+. /home/dsac/Documents/Long/Pico/common/liberty
+set link_library [list \
+    /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db \
+    /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ss0p72vm40c.db \
+    /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_tt0p8v25c.db \
+]
+/home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ss0p72vm40c.db /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_tt0p8v25c.db
+set target_library $link_library
+/home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ss0p72vm40c.db /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_tt0p8v25c.db
+set symbol_library ""
+# Define working library
+define_design_lib WORK -path ./work
+1
+# Read and analyze RTL files
+read_file -format verilog {/home/dsac/Documents/Long/Pico/me_labs/lab1/rtl/counter.v}
+Loading db file '/home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Warning: Error occured in ccs delay calculation, results may not be accurate.
+Loading db file '/home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ss0p72vm40c.db'
+Loading db file '/home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_tt0p8v25c.db'
+Loading db file '/home/dsac/synopsys/tools/syn/W-2024.09-SP3/libraries/syn/gtech.db'
+Loading db file '/home/dsac/synopsys/tools/syn/W-2024.09-SP3/libraries/syn/standard.sldb'
+  Loading link library 'saed14rvt_ff0p88v125c'
+  Loading link library 'saed14rvt_ss0p72vm40c'
+  Loading link library 'saed14rvt_tt0p8v25c'
+  Loading link library 'gtech'
+Loading verilog file '/home/dsac/Documents/Long/Pico/me_labs/lab1/rtl/counter.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/dsac/Documents/Long/Pico/me_labs/lab1/rtl/counter.v
+
+Inferred memory devices in process in routine 'counter' in file
+         /home/dsac/Documents/Long/Pico/me_labs/lab1/rtl/counter.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|        q_reg        | Flip-flop |   8   |  Y  | N  | None  | Async | N  |  10  |
+==================================================================================
+Presto compilation completed successfully.
+Current design is now '/home/dsac/Documents/Long/Pico/me_labs/lab1/rtl/counter.db:counter'
+Loaded 1 design.
+Current design is 'counter'.
+counter
+analyze -library WORK -format verilog {/home/dsac/Documents/Long/Pico/me_labs/lab1/rtl/counter.v}
+Running PRESTO HDLC
+Compiling source file /home/dsac/Documents/Long/Pico/me_labs/lab1/rtl/counter.v
+Presto compilation completed successfully.
+1
+elaborate counter -architecture verilog -library WORK
+Running PRESTO HDLC
+
+Inferred memory devices in process in routine 'counter' in file
+         /home/dsac/Documents/Long/Pico/me_labs/lab1/rtl/counter.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|        q_reg        | Flip-flop |   8   |  Y  | N  | None  | Async | N  |  10  |
+==================================================================================
+Presto compilation completed successfully. (counter)
+Module: counter, Ports: 11, Input: 3, Output: 8, Inout: 0
+Module: counter, Registers: 8, Async set/reset: 8, Sync set/reset: 0
+Information: Module counter report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'counter'.
+1
+# Link the design
+link
+
+  Linking design 'counter'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  saed14rvt_ff0p88v125c (library) /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db
+  saed14rvt_ss0p72vm40c (library) /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ss0p72vm40c.db
+  saed14rvt_tt0p8v25c (library) /home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_tt0p8v25c.db
+
+1
+set_operating_conditions -min ss0p72vm40c -max ff0p88v125c
+Using operating conditions 'ff0p88v125c' found in library 'saed14rvt_ff0p88v125c'.
+Using operating conditions 'ss0p72vm40c' found in library 'saed14rvt_ss0p72vm40c'.
+1
+# Set constraints
+create_clock -name clk -period 10 [get_ports clk] -waveform {0 5}
+1
+#set_input_delay 2 -clock clk [all_inputs]
+#set_output_delay 2 -clock clk [all_outputs]
+#set_max_fanout 8 [current_design]
+set_max_transition 0.2 [get_designs counter]
+1
+set_clock_uncertainty 0.2 [get_clocks clk]
+1
+# Save synthesis session info for Formality
+set_svf /home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_formality.svf
+1
+set_svf_annotation on
+Error: unknown command 'set_svf_annotation' (CMD-005)
+# Compile
+compile_ultra -retime
+Loading db file '/home/dsac/synopsys/tools/syn/W-2024.09-SP3/libraries/syn/dw_foundation.sldb'
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 2%, Ram Free: 6 GB, Swap Free: 7 GB, Work Disk Free: 326 GB, Tmp Disk Free: 57 GB
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.3 |     *     |
+| Licensed DW Building Blocks        | W-2024.09-DWBB_202409.3 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra -retime                                                             |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 12                                     |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 8                                      |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 2                                      |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'counter'
+
+  Loading target library 'saed14rvt_ss0p72vm40c'
+  Loading target library 'saed14rvt_tt0p8v25c'
+Loaded alib file './alib-52/saed14rvt_ff0p88v125c.db.alib'
+Loaded alib file './alib-52/saed14rvt_ss0p72vm40c.db.alib'
+Loaded alib file './alib-52/saed14rvt_tt0p8v25c.db.alib'
+Warning: Operating condition ff0p88v125c set on design counter has different process,
+voltage and temperatures parameters than the parameters at which target library 
+saed14rvt_ss0p72vm40c is characterized. Delays may be inaccurate as a result. (OPT-998)
+Module: DW01_NAND2, Ports: 3, Input: 2, Output: 1, Inout: 0
+Module: DW01_NAND2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+CPU Load: 4%, Ram Free: 6 GB, Swap Free: 7 GB, Work Disk Free: 326 GB, Tmp Disk Free: 57 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'counter'
+ Implement Synthetic for 'counter'.
+CPU Load: 4%, Ram Free: 6 GB, Swap Free: 7 GB, Work Disk Free: 326 GB, Tmp Disk Free: 57 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'SAEDRVT14_TIE1_PV1ECO_1' in the library 'saed14rvt_ff0p88v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_PV1ECO_1' in the library 'saed14rvt_ff0p88v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_V1ECO_1' in the library 'saed14rvt_ff0p88v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_V1_2' in the library 'saed14rvt_ff0p88v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_4' in the library 'saed14rvt_ff0p88v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_V1_2' in the library 'saed14rvt_ff0p88v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_4' in the library 'saed14rvt_ff0p88v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'counter'. (DDB-72)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:19      18.7      0.00       0.0       0.0                           1012700.0625
+    0:00:19      18.7      0.00       0.0       0.0                           1012700.0625
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:19      18.7      0.00       0.0       0.0                           1012700.0625
+    0:00:19      18.7      0.00       0.0       0.0                           1012700.0625
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:20      16.7      0.00       0.0       0.0                           702623.4375
+    0:00:20      16.7      0.00       0.0       0.0                           702623.4375
+    0:00:20      16.7      0.00       0.0       0.0                           702623.4375
+    0:00:20      16.7      0.00       0.0       0.0                           702623.4375
+    0:00:20      16.7      0.00       0.0       0.0                           702623.4375
+    0:00:20      16.7      0.00       0.0       0.0                           702623.4375
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:00:28      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:28      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:28      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:28      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:32      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:33      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:33      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:33      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:33      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:33      16.5      0.00       0.0       0.0                           711451.7500
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:33      16.6      0.00       0.0       0.0                           672208.0625
+    0:00:33      26.2      0.00       0.0       0.0                           1757114.1250
+    0:00:33      26.2      0.00       0.0       0.0                           1757114.1250
+    0:00:33      26.2      0.00       0.0       0.0                           1757114.1250
+    0:00:33      15.9      0.00       0.0       0.0                           685296.4375
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:00:37      15.9      0.00       0.0       0.0                           685296.4375
+    0:00:37      15.9      0.00       0.0       0.0                           685296.4375
+    0:00:37      15.9      0.00       0.0       0.0                           685296.4375
+    0:00:37      15.9      0.00       0.0       0.0                           685296.4375
+    0:00:41      15.9      0.00       0.0       0.0                           677397.6875
+    0:00:41      15.9      0.00       0.0       0.0                           677397.6875
+    0:00:41      15.9      0.00       0.0       0.0                           677397.6875
+    0:00:41      15.9      0.00       0.0       0.0                           677397.6875
+    0:00:41      15.9      0.00       0.0       0.0                           677397.6875
+    0:00:41      15.9      0.00       0.0       0.0                           677397.6875
+CPU Load: 5%, Ram Free: 6 GB, Swap Free: 7 GB, Work Disk Free: 326 GB, Tmp Disk Free: 57 GB
+Loading db file '/home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ff0p88v125c.db'
+Loading db file '/home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_ss0p72vm40c.db'
+Loading db file '/home/dsac/Documents/Long/Pico/common/liberty/saed14rvt_tt0p8v25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+  Loading target library 'saed14rvt_ss0p72vm40c'
+  Loading target library 'saed14rvt_tt0p8v25c'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+CPU Load: 5%, Ram Free: 6 GB, Swap Free: 7 GB, Work Disk Free: 326 GB, Tmp Disk Free: 57 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+check_design
+1
+# Reports
+report_area > /home/dsac/Documents/Long/Pico/me_labs/lab1/reports/area.rpt
+report_timing > /home/dsac/Documents/Long/Pico/me_labs/lab1/reports/timing.rpt
+report_power > /home/dsac/Documents/Long/Pico/me_labs/lab1/reports/power.rpt
+# Export netlist
+write -format verilog -hierarchy -output /home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_synth.v
+Writing verilog file '/home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_synth.v'.
+1
+set_svf -off
+1
+write_sdf /home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_synth.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_synth.sdf'. (WT-3)
+1
+# === Formality Preparation ===
+# Export DDC (optional)
+write -format ddc -hierarchy -output /home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_synth.ddc
+Writing ddc file '/home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_synth.ddc'.
+1
+# Export SDC constraints (optional but recommended)
+write_sdc /home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_synth.sdc
+1
+# Export environment script for Formality
+write_script -output /home/dsac/Documents/Long/Pico/me_labs/lab1/outputs/counter_env.tcl
+1
+# Turn off SVF recording
+set_svf -off
+1
+# Optionally start GUI
+gui_start
+Current design is 'counter'.
+dc_shell> exit
+
+Memory usage for this session 1726 Mbytes.
+Memory usage for this session including child processes 1726 Mbytes.
+CPU usage for this session 73 seconds ( 0.02 hours ).
+Elapsed time for this session 99 seconds ( 0.03 hours ).
+
+Thank you...
+

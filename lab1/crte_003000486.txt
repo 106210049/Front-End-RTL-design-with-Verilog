@@ -1,0 +1,463 @@
+CRTE_SNAPSHOT_START
+
+SECTION_CRTE_VERSION
+3.0
+
+SECTION_PID
+3000486
+
+SECTION_POLLING_INTERVAL
+5
+
+SECTION_DATE_TIME
+Tue Jun 24 01:43:59 +07 2025 (1750704239)
+
+SECTION_OS_VERSION
+osname: Linux
+hostname: dsac156
+arch: x86_64
+release_version: 5.14.0-570.21.1.el9_6.x86_64
+
+SECTION_IPC_INFO
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+
+
+SECTION_ULIMIT
+real-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) unlimited
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 61738
+max locked memory           (kbytes, -l) 8192
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 524288
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 16384
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 61738
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
+
+SECTION_SYSCONF
+_SC_THREAD_SAFE_FUNCTIONS= 200809
+_SC_CLK_TCK= 100
+_SC_OPEN_MAX= 524288
+_SC_PAGE_SIZE= 4096
+_SC_ARG_MAX= 4194304
+_SC_CHILD_MAX= 61738
+_SC_LINE_MAX= 2048
+
+SECTION_FULL_COMMAND
+/home/dsac/synopsys/tools/prime/W-2024.09-SP5/linux64/syn/bin/pt_shell_exec -root_path /home/dsac/synopsys/tools/prime/W-2024.09-SP5 -shell Timing -f STA/lab1_sta.tcl
+
+SECTION_CPUINFO
+total_core: 20
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 801
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 1392
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 5000
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 800
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 800
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 801
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 1177
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 800
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 1369
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 800
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 800
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 800
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 2873
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 800
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 1678
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 3273
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 803
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 802
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 799
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+model_name:  Intel(R) Core(TM) i5-14500
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 799
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 24576
+ht: 0
+
+SECTION_OS_RELEASE_VERSION
+AlmaLinux release 9.6 (Sage Margay)
+
+
+SECTION_SYS/VM
+/proc/sys/vm/admin_reserve_kbytes:8192
+/proc/sys/vm/compact_unevictable_allowed:1
+/proc/sys/vm/compaction_proactiveness:20
+/proc/sys/vm/dirty_background_bytes:0
+/proc/sys/vm/dirty_background_ratio:10
+/proc/sys/vm/dirty_bytes:0
+/proc/sys/vm/dirty_expire_centisecs:3000
+/proc/sys/vm/dirty_ratio:20
+/proc/sys/vm/dirty_writeback_centisecs:500
+/proc/sys/vm/dirtytime_expire_seconds:43200
+/proc/sys/vm/extfrag_threshold:500
+/proc/sys/vm/hugetlb_optimize_vmemmap:0
+/proc/sys/vm/hugetlb_shm_group:0
+/proc/sys/vm/laptop_mode:0
+/proc/sys/vm/legacy_va_layout:0
+/proc/sys/vm/lowmem_reserve_ratio:256	256	32	0	0
+/proc/sys/vm/max_map_count:65530
+/proc/sys/vm/memfd_noexec:0
+/proc/sys/vm/memory_failure_early_kill:0
+/proc/sys/vm/memory_failure_recovery:1
+/proc/sys/vm/min_free_kbytes:67584
+/proc/sys/vm/min_slab_ratio:5
+/proc/sys/vm/min_unmapped_ratio:1
+/proc/sys/vm/mmap_min_addr:65536
+/proc/sys/vm/nr_hugepages:0
+/proc/sys/vm/nr_hugepages_mempolicy:0
+/proc/sys/vm/nr_overcommit_hugepages:0
+/proc/sys/vm/numa_stat:1
+/proc/sys/vm/numa_zonelist_order:Node
+/proc/sys/vm/oom_dump_tasks:1
+/proc/sys/vm/oom_kill_allocating_task:0
+/proc/sys/vm/overcommit_kbytes:0
+/proc/sys/vm/overcommit_memory:0
+/proc/sys/vm/overcommit_ratio:50
+/proc/sys/vm/page-cluster:3
+/proc/sys/vm/page_lock_unfairness:5
+/proc/sys/vm/panic_on_oom:0
+/proc/sys/vm/percpu_pagelist_high_fraction:0
+/proc/sys/vm/stat_interval:1
+/proc/sys/vm/swappiness:60
+/proc/sys/vm/unprivileged_userfaultfd:0
+/proc/sys/vm/user_reserve_kbytes:131072
+/proc/sys/vm/vfs_cache_pressure:100
+/proc/sys/vm/watermark_boost_factor:15000
+/proc/sys/vm/watermark_scale_factor:10
+/proc/sys/vm/zone_reclaim_mode:0
+
+
+SECTION_SWAP
+swap_partition: /dev/dm-1
+size_gb: 7
+
+CRTE_SNAPSHOT_END
+
+CRTE_PERIODIC_START 1 1750704239771
+
+SECTION_MPSTAT
+total_core: 20
+
+CPU     %user   %kernel %wait   %idle   
+all   0.912405 0.686742 0.016484 98.384369
+0     1.236020 1.087180 0.186132 97.490662
+1     0.830677 0.508795 0.009775 98.650749
+2     1.792907 1.104269 0.017307 97.085526
+3     0.375635 0.227042 0.004600 99.392731
+4     1.873350 1.177042 0.019143 96.930473
+5     0.260406 0.138500 0.006270 99.594826
+6     1.817780 1.182062 0.019920 96.980232
+7     0.273638 0.130590 0.004347 99.591423
+8     1.823977 1.170970 0.021267 96.983795
+9     0.238176 0.112473 0.003802 99.645554
+10     1.638123 1.128235 0.012801 97.220833
+11     0.296491 0.152775 0.007839 99.542892
+12     0.938531 0.923410 0.003856 98.134201
+13     0.819953 0.749566 0.002237 98.428246
+14     0.699092 0.629060 0.001739 98.670105
+15     0.642312 0.591514 0.001310 98.764870
+16     0.685832 0.669991 0.003274 98.640907
+17     0.724379 0.710113 0.001339 98.564163
+18     0.689890 0.747190 0.001777 98.561142
+19     0.612674 0.606042 0.001569 98.779716
+SECTION_LOADAVG
+0.09 0.05 0.05 1/406 3627269
+
+SECTION_PID_STATUS
+name: pt_shell_exec
+state: 1
+vmsize: 5096108
+vmrss: 3012060
+vmdata: 3364136
+vmstk: 132
+vmexe: 585036
+vmlib: 477876
+threads: 41
+
+SECTION_PROCESS_CPU_UTIL
+pid: 3000486
+cpu_total_time: 469547942
+cpu_used_time: 208901
+cpu_p: 
+
+SECTION_SYSTEM_CPU_UTIL
+sys_cpu_p: 
+
+SECTION_MEMINFO
+memtotal: 15878172
+memfree: 10322016
+cached: 2066936
+swapcached: 8232
+active: 2105124
+swaptotal: 8138748
+swapfree: 8106236
+
+SECTION_SMAPS
+shared_kb: 6836
+private_kb: 3006968
+
+SECTION_DF
+Filesystem  Size  Used Avail Use%
+filesystem        69G  12G  57G    17
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          36700160  289312 36410848   4294954811
+
+SECTION_CWD
+Filesystem  Size  Used Avail Use%
+filesystem        397G  70G  326G    18
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          208451584  380184 208071400   4294957856
+
+SECTION_DF
+Filesystem  Size  Used Avail Use%
+filesystem        69G  12G  57G    17
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          36700160  289312 36410848   4294954811
+
+SECTION_SWAP_RATE
+blk_read: 195968
+blk_wrtn: 2339200
+swap_in_rate: 
+swap_out_rate: 
+swap_in_rate: 
+swap_out_rate: 
+
+SECTION_FD_SIZE
+files: 36
+total_size: 1116762
+
+SECTION_NET_INTERFACE
+total_eth_avbl: 2
+
+name net_rx_err net_rx_drp net_tx_err net_tx_drp 
+    lo:         0        0        0        0
+enp1s0:         0        30797        0        15
+
+SECTION_NFSSTAT
+readlink: 0
+write: 0
+getattr: 16
+retrans: 0
+raw_data: 
+net 0 0 0 0
+rpc 158683 0 158709
+proc4 69 4 36191 0 0 5345 0 24960 0 26120 0 14 0 0 0 0 0 0 2637 26617 6069 3 0 0 0 0 2 11 22 24 811 25 26084 1 0 0 0 0 0 2 1 0 3754 0 1 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+
+SECTION_THREAD_CPU_UTIL
+3000486 : 3000486 (pt_shell_exec) R 2791 3000460 30229 0 -1 4194304 29285 175758 6345 1464 50977 61917 821 87 20 0 41 0 19119588 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 0 2097152 1268285183 0 0 0 17 0 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000580 : 3000580 (jemalloc_bg_thd) S 2791 3000460 30229 0 -1 4194368 0 175758 0 1464 0 0 821 87 20 0 41 0 19119773 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147221247 2097152 1268285183 1 0 0 -1 0 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000789 : 3000789 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 1 175758 0 1464 0 0 821 87 20 0 41 0 19120182 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 0 2097152 1268285183 1 0 0 -1 10 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000934 : 3000934 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 0 175758 0 1464 0 0 821 87 20 0 41 0 19120438 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147221247 2097152 1268285183 1 0 0 -1 0 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000987 : 3000987 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 1 175758 0 1464 6 8 821 87 20 0 41 0 19120527 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 10 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000988 : 3000988 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 3 175758 0 1464 0 0 821 87 20 0 41 0 19120527 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 5 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000989 : 3000989 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 1 175758 0 1464 0 0 821 87 20 0 41 0 19120527 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 10 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000990 : 3000990 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 1 175758 0 1464 0 0 821 87 20 0 41 0 19120527 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 8 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000991 : 3000991 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 0 175758 0 1464 0 0 821 87 20 0 41 0 19120528 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 18 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000992 : 3000992 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 1 175758 0 1464 0 0 821 87 20 0 41 0 19120528 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 10 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000993 : 3000993 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 24 175758 12 1464 1 0 821 87 20 0 41 0 19120528 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 2 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000994 : 3000994 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 27 175758 12 1464 0 0 821 87 20 0 41 0 19120528 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 10 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000995 : 3000995 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 6 175758 1 1464 0 0 821 87 20 0 41 0 19120528 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 17 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000996 : 3000996 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 32 175758 27 1464 1 0 821 87 20 0 41 0 19120528 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 1 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000997 : 3000997 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 331760 175758 23 1464 497 34 821 87 20 0 41 0 19120528 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 10 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000998 : 3000998 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 63 175758 0 1464 0 0 821 87 20 0 41 0 19120528 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 4 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3000999 : 3000999 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 4 175758 1 1464 0 0 821 87 20 0 41 0 19120528 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 10 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001000 : 3001000 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 3 175758 1 1464 1 6 821 87 20 0 41 0 19120530 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 10 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001014 : 3001014 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 0 175758 0 1464 0 0 821 87 20 0 41 0 19120539 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 13 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001015 : 3001015 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 0 175758 0 1464 0 0 821 87 20 0 41 0 19120539 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 19 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001042 : 3001042 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 2 7 821 87 20 0 41 0 19120573 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 7 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001043 : 3001043 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 0 175758 0 1464 3 6 821 87 20 0 41 0 19120573 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 9 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001044 : 3001044 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 1 175758 0 1464 2 7 821 87 20 0 41 0 19120573 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 10 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001947 : 3001947 (llvmpipe-0) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 7 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001948 : 3001948 (llvmpipe-1) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 5 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001949 : 3001949 (llvmpipe-2) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 9 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001950 : 3001950 (llvmpipe-3) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 1 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001951 : 3001951 (llvmpipe-4) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 6 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001952 : 3001952 (llvmpipe-5) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 4 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001953 : 3001953 (llvmpipe-6) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 0 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001954 : 3001954 (llvmpipe-7) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 19 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001955 : 3001955 (llvmpipe-8) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 18 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001956 : 3001956 (llvmpipe-9) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 17 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001957 : 3001957 (llvmpipe-10) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 16 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001958 : 3001958 (llvmpipe-11) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 15 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001959 : 3001959 (llvmpipe-12) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 14 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001960 : 3001960 (llvmpipe-13) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 13 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001961 : 3001961 (llvmpipe-14) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 12 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3001962 : 3001962 (llvmpipe-15) S 2791 3000460 30229 0 -1 4194368 2 175758 0 1464 0 0 821 87 20 0 41 0 19122303 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 2147220735 2097152 1268285183 1 0 0 -1 8 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3002051 : 3002051 (Thread (pooled)) S 2791 3000460 30229 0 -1 4194368 1 175758 0 1464 0 0 821 87 20 0 41 0 19122437 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 3 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+3002060 : 3002060 (pt_shell_exec) S 2791 3000460 30229 0 -1 4194368 1 175758 0 1464 16460 41740 821 87 20 0 41 0 19122455 5218414592 753015 18446744073709551615 127520768 726597264 140721258632656 0 0 0 8192 2097152 1268285183 1 0 0 -1 4 0 0 0 0 0 728337856 752839192 890482688 140721258639723 140721258639890 140721258639890 140721258643372 0
+
+CRTE_PERIODIC_END 1 1750704239771

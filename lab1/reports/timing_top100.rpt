@@ -1,0 +1,16 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-slack_lesser_than 0.00
+	-max_paths 100
+	-group **async_default** **clock_gating_default** **default** clk
+	-sort_by group
+Design : counter
+Version: W-2024.09-SP5
+Date   : Sun Jun 22 22:23:41 2025
+****************************************
+
+No paths with slack less than 0.00.
+
+1

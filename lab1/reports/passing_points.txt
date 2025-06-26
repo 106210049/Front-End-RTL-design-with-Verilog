@@ -1,0 +1,84 @@
+**************************************************
+Report         : passing_points
+
+Reference      : r:/WORK/counter
+Implementation : i:/WORK/counter
+Version        : W-2024.09-SP5
+Date           : Thu Jun 26 09:53:47 2025
+**************************************************
+
+16 Passing compare points:
+
+  Ref  DFF        r:/WORK/counter/q_reg[0]
+  Impl DFF        i:/WORK/counter/q_reg[0]
+
+  Ref  DFF        r:/WORK/counter/q_reg[1]
+  Impl DFF        i:/WORK/counter/q_reg[1]
+
+  Ref  DFF        r:/WORK/counter/q_reg[2]
+  Impl DFF        i:/WORK/counter/q_reg[2]
+
+  Ref  DFF        r:/WORK/counter/q_reg[3]
+  Impl DFF        i:/WORK/counter/q_reg[3]
+
+  Ref  DFF        r:/WORK/counter/q_reg[4]
+  Impl DFF        i:/WORK/counter/q_reg[4]
+
+  Ref  DFF        r:/WORK/counter/q_reg[5]
+  Impl DFF        i:/WORK/counter/q_reg[5]
+
+  Ref  DFF        r:/WORK/counter/q_reg[6]
+  Impl DFF        i:/WORK/counter/q_reg[6]
+
+  Ref  DFF        r:/WORK/counter/q_reg[7]
+  Impl DFF        i:/WORK/counter/q_reg[7]
+
+  Ref  Port       r:/WORK/counter/q[0]
+  Impl Port       i:/WORK/counter/q[0]
+
+  Ref  Port       r:/WORK/counter/q[1]
+  Impl Port       i:/WORK/counter/q[1]
+
+  Ref  Port       r:/WORK/counter/q[2]
+  Impl Port       i:/WORK/counter/q[2]
+
+  Ref  Port       r:/WORK/counter/q[3]
+  Impl Port       i:/WORK/counter/q[3]
+
+  Ref  Port       r:/WORK/counter/q[4]
+  Impl Port       i:/WORK/counter/q[4]
+
+  Ref  Port       r:/WORK/counter/q[5]
+  Impl Port       i:/WORK/counter/q[5]
+
+  Ref  Port       r:/WORK/counter/q[6]
+  Impl Port       i:/WORK/counter/q[6]
+
+  Ref  Port       r:/WORK/counter/q[7]
+  Impl Port       i:/WORK/counter/q[7]
+
+ [BBNet: multiply-driven net
+  BBPin: black-box pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+1
